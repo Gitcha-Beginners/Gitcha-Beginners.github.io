@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div [class]=\"theme\">\n  <h1>\n    Welcome to {{title}}!\n  </h1>\n\n  <mat-card>\n    <button mat-raised-button color=\"primary\">Primary</button>\n    <button mat-raised-button color=\"accent\">Accent</button>\n    <button mat-raised-button color=\"warn\">Warn</button>\n  </mat-card>\n\n  <br>\n  \n  <mat-card>\n    <mat-select placeholder=\"Theme\" [(ngModel)]=\"theme\">\n      <mat-option value=\"my-theme\">My Theme</mat-option>\n      <mat-option value=\"my-second-theme\">My Second Theme</mat-option>\n    </mat-select>\n  </mat-card>\n</div>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div [class]=\"theme\">\n  <h1>\n    Welcome to {{title}}!\n  </h1>\n\n  <mat-card>\n    <button mat-raised-button color=\"primary\" (click)=\"goPage(1)\">Primary</button>\n    <button mat-raised-button color=\"accent\" (click)=\"goPage(2)\">Accent</button>\n    <button mat-raised-button color=\"warn\" (click)=\"goPage(3)\">Warn</button>\n  </mat-card>\n\n  <br>\n  \n  <mat-card>\n    <mat-select placeholder=\"Theme\" [(ngModel)]=\"theme\">\n      <mat-option value=\"my-theme\">My Theme</mat-option>\n      <mat-option value=\"my-second-theme\">My Second Theme</mat-option>\n    </mat-select>\n  </mat-card>\n</div>\n"
 
 /***/ }),
 
@@ -57,9 +57,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'amte';
-        this.theme = 'my-theme';
+        this.title = 'Gitcha-Beginners';
     }
+    AppComponent.prototype.goPage = function (index) {
+        if (index === 1) {
+            location.href = 'http://www.naver.com';
+        }
+        else if (index === 2) {
+            location.href = 'http://www.google.com';
+        }
+        else if (index === 3) {
+            location.href = 'http://www.daum.com';
+        }
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
