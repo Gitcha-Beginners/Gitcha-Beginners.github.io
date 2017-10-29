@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'amte';
-  theme = 'my-theme';
+  title = 'Gitcha-Beginners';
+
+  goPage(index) {
+    if (index === 1) {
+      location.href = 'http://www.naver.com';
+    } else if (index === 2) {
+      location.href = 'http://www.google.com';
+    } else if (index === 3) {
+      location.href = 'http://www.daum.com';
+    }
+  }
 }

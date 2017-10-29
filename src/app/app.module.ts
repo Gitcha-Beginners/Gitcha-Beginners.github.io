@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatCardModule,
   MatButtonModule,
-  MatSelectModule
+  MatSelectModule,
 } from '@angular/material';
 
 import { AppComponent } from './app.component';

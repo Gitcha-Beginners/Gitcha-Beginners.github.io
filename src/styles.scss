@@ -5,6 +5,9 @@
 
 @include mat-core();
 
+// @import './themes/my-theme';
+// @import './themes/my-second-theme';
+
 $my-theme-primary: mat-palette($mat-cyan);
 $my-theme-accent: mat-palette($mat-teal, 400, 200, 600);
 $my-theme-warn: mat-palette($mat-red);
@@ -15,10 +18,6 @@ $my-theme: mat-light-theme(
     $my-theme-accent,
     $my-theme-warn
 );
-
-@include angular-material-theme($my-theme);
-
-
 
 $my-second-theme-primary: mat-palette($mat-purple);
 $my-second-theme-accent: mat-palette($mat-pink);
